@@ -3,7 +3,7 @@ import { CarProps, FilterProps } from '@/types';
 export async function fetchCars(filters: FilterProps) {
 	const { manufacturer, model, limit, fuel, year } = filters;
 	const headers = {
-		'X-Api-Key': process.env.API_KEY || '',
+		'X-Api-Key': process.env.NEXT_PUBLIC_API_KEY!,
 	};
 	const response = await fetch(
 		`https://api.api-ninjas.com/v1/cars?make=${manufacturer}&year=${year}&model=${model}&limit=${limit}&fuel_type=${fuel}`,
