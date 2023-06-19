@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { footerLinks } from '@/constats';
+import { footerLinks } from '@/constants';
 import Link from 'next/link';
 
 type FooterProps = {};
