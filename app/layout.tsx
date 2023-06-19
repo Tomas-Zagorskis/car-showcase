@@ -1,5 +1,6 @@
 import { Footer, Navbar } from '@/components';
 import './globals.css';
+import Head from 'next/head';
 
 export const metadata = {
 	title: 'Car Rental',
@@ -13,6 +14,9 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
+			<Head>
+				<link rel='icon' href='/icon.svg' sizes='any' />
+			</Head>
 			<body className='relative'>
 				<Navbar />
 				{children}
